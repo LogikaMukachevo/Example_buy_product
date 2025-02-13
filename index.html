@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення товару</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-card">
+        <img src="img/product.webp" alt="Товар">
+        <h2>Назва товару</h2>
+        <p>Опис товару. Ціна: 500 грн</p>
+        <button id="buyButton">Купити</button>
+    </div>
+
+    
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформлення замовлення</h2>
+            <form id="orderForm">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="address">Адреса доставки:</label>
+                <input type="text" id="address" required>
+                
+                <button type="submit">Підтвердити</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
